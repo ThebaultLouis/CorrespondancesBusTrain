@@ -55,21 +55,3 @@ class Place:
             self.stop_area = StopArea(**stop_area)
         elif embedded_type == "administrative_region":
             self.administrative_region = AdministrativeRegion(**administrative_region)
-
-
-class FeedPublisher:
-    def __init__(self, id, name, url, license):
-        self.id = id
-        self.name = name
-        self.url = url
-        self.license = license
-
-
-class PlacesApiResponse:
-
-    def __init__(self, feed_publishers, disruptions, places, **kwargs):
-        self.feed_publishers = [
-            FeedPublisher(**publisher) for publisher in feed_publishers
-        ]
-        self.disruptions = disruptions
-        self.places = [Place(**place) for place in places]

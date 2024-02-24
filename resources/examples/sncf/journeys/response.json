@@ -1,0 +1,3377 @@
+{
+  "feed_publishers": [
+    {
+      "id": "sncf",
+      "name": "SNCF PIV Production",
+      "url": "",
+      "license": "Private (unspecified)"
+    },
+    {
+      "id": "SNCF:sncf-piv",
+      "name": "SNCF PIV Production",
+      "url": "",
+      "license": "Private (unspecified)"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=2024-02-23T12%3A00%3A00&count=5&data_freshness=realtime",
+      "templated": false,
+      "rel": "bypass_disruptions",
+      "type": "bypass_disruptions"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=20240223T122101&count=5&datetime_represents=departure",
+      "templated": false,
+      "rel": "next",
+      "type": "next"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=20240223T134359&count=5&datetime_represents=arrival",
+      "templated": false,
+      "rel": "prev",
+      "type": "prev"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=20240223T000000&count=5&datetime_represents=departure",
+      "templated": false,
+      "rel": "first",
+      "type": "first"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=20240223T235959&count=5&datetime_represents=arrival",
+      "templated": false,
+      "rel": "last",
+      "type": "last"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_mode.id}",
+      "templated": true,
+      "rel": "physical_modes",
+      "type": "physical_mode"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/disruptions/{disruption.id}",
+      "templated": true,
+      "rel": "disruptions",
+      "type": "disruption"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/trips/{trip.id}",
+      "templated": true,
+      "rel": "trips",
+      "type": "trip"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/disruptions/{disruptions.id}",
+      "templated": true,
+      "rel": "disruptions",
+      "type": "disruptions"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+      "templated": true,
+      "rel": "lines",
+      "type": "line"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/routes/{route.id}",
+      "templated": true,
+      "rel": "routes",
+      "type": "route"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/networks/{network.id}",
+      "templated": true,
+      "rel": "networks",
+      "type": "network"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+      "templated": true,
+      "rel": "stop_areas",
+      "type": "stop_area"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+      "templated": true,
+      "rel": "commercial_modes",
+      "type": "commercial_mode"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/stop_points/{stop_point.id}",
+      "templated": true,
+      "rel": "stop_points",
+      "type": "stop_point"
+    },
+    {
+      "href": "https://api.sncf.com/v1/coverage/sncf/vehicle_journeys/{vehicle_journey.id}",
+      "templated": true,
+      "rel": "vehicle_journeys",
+      "type": "vehicle_journey"
+    }
+  ],
+  "journeys": [
+    {
+      "duration": 4980,
+      "nb_transfers": 0,
+      "departure_date_time": "20240223T122100",
+      "arrival_date_time": "20240223T134400",
+      "requested_date_time": "20240223T120000",
+      "type": "best",
+      "status": "",
+      "tags": [
+        "walking",
+        "reliable",
+        "ecologic"
+      ],
+      "co2_emission": {
+        "value": 1162.2016,
+        "unit": "gEC"
+      },
+      "air_pollutants": {
+        "unit": "g",
+        "values": {
+          "nox": 0.0,
+          "pm": 0.0
+        }
+      },
+      "durations": {
+        "total": 4980,
+        "walking": 0,
+        "bike": 0,
+        "car": 0,
+        "ridesharing": 0,
+        "taxi": 0
+      },
+      "distances": {
+        "walking": 0,
+        "bike": 0,
+        "car": 0,
+        "ridesharing": 0,
+        "taxi": 0
+      },
+      "fare": {
+        "found": false,
+        "total": {
+          "value": "0.0"
+        },
+        "links": []
+      },
+      "calendars": [
+        {
+          "week_pattern": {
+            "monday": false,
+            "tuesday": false,
+            "wednesday": false,
+            "thursday": false,
+            "friday": true,
+            "saturday": false,
+            "sunday": false
+          },
+          "active_periods": [
+            {
+              "begin": "20240223",
+              "end": "20240224"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "bVofpF9Snaj3RhFUREEawC_0",
+          "duration": 0,
+          "co2_emission": {
+            "value": 0.0,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T122100",
+          "arrival_date_time": "20240223T122100",
+          "to": {
+            "id": "stop_point:SNCF:87747006:Train",
+            "name": "Grenoble (Grenoble)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87747006:Train",
+              "name": "Grenoble",
+              "label": "Grenoble (Grenoble)",
+              "coord": {
+                "lon": "5.714548",
+                "lat": "45.191491"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:38185",
+                  "name": "Grenoble",
+                  "level": 8,
+                  "zip_code": "38000;38100",
+                  "label": "Grenoble (38000-38100)",
+                  "insee": "38185",
+                  "coord": {
+                    "lon": "5.7357819",
+                    "lat": "45.1875602"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87747006",
+                "name": "Grenoble",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87747006"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87747006"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "from": {
+            "id": "admin:fr:38185",
+            "name": "Grenoble (38000-38100)",
+            "quality": 0,
+            "administrative_region": {
+              "id": "admin:fr:38185",
+              "name": "Grenoble",
+              "level": 8,
+              "zip_code": "38000;38100",
+              "label": "Grenoble (38000-38100)",
+              "insee": "38185",
+              "coord": {
+                "lon": "5.7357819",
+                "lat": "45.1875602"
+              }
+            },
+            "embedded_type": "administrative_region"
+          },
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                5.7357819,
+                45.1875602
+              ],
+              [
+                5.714548,
+                45.191491
+              ]
+            ],
+            "properties": [
+              {
+                "length": 1720
+              }
+            ]
+          },
+          "mode": "walking",
+          "type": "crow_fly",
+          "links": []
+        },
+        {
+          "id": "section_4_0",
+          "duration": 4980,
+          "co2_emission": {
+            "value": 1162.2016,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T122100",
+          "arrival_date_time": "20240223T134400",
+          "base_departure_date_time": "20240223T122100",
+          "base_arrival_date_time": "20240223T134400",
+          "data_freshness": "base_schedule",
+          "to": {
+            "id": "stop_point:SNCF:87723197:Train",
+            "name": "Lyon Part Dieu (Lyon)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87723197:Train",
+              "name": "Lyon Part Dieu",
+              "label": "Lyon Part Dieu (Lyon)",
+              "coord": {
+                "lon": "4.859409",
+                "lat": "45.760596"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:69123",
+                  "name": "Lyon",
+                  "level": 8,
+                  "zip_code": "",
+                  "label": "Lyon",
+                  "insee": "69123",
+                  "coord": {
+                    "lon": "4.8320114",
+                    "lat": "45.7578137"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87723197",
+                "name": "Lyon Part Dieu",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87723197"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87723197"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "from": {
+            "id": "stop_point:SNCF:87747006:Train",
+            "name": "Grenoble (Grenoble)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87747006:Train",
+              "name": "Grenoble",
+              "label": "Grenoble (Grenoble)",
+              "coord": {
+                "lon": "5.714548",
+                "lat": "45.191491"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:38185",
+                  "name": "Grenoble",
+                  "level": 8,
+                  "zip_code": "38000;38100",
+                  "label": "Grenoble (38000-38100)",
+                  "insee": "38185",
+                  "coord": {
+                    "lon": "5.7357819",
+                    "lat": "45.1875602"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87747006",
+                "name": "Grenoble",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87747006"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87747006"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "additional_informations": [
+            "regular"
+          ],
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                5.714548,
+                45.191491
+              ],
+              [
+                5.594959,
+                45.364034
+              ],
+              [
+                5.449582,
+                45.560287
+              ],
+              [
+                5.273362,
+                45.583982
+              ],
+              [
+                5.150785,
+                45.627619
+              ],
+              [
+                4.859409,
+                45.760596
+              ]
+            ],
+            "properties": [
+              {
+                "length": 97664
+              }
+            ]
+          },
+          "type": "public_transport",
+          "display_informations": {
+            "commercial_mode": "TER",
+            "network": "TER",
+            "direction": "Lyon Part Dieu (Lyon)",
+            "label": "Lyon Part Dieu - Grenoble",
+            "color": "",
+            "code": "",
+            "name": "Lyon Part Dieu - Grenoble",
+            "links": [
+              {
+                "templated": false,
+                "rel": "terminus",
+                "internal": true,
+                "type": "stop_area",
+                "id": "stop_area:SNCF:87747006"
+              }
+            ],
+            "text_color": "",
+            "description": "",
+            "physical_mode": "TER / Intercit\u00e9s",
+            "equipments": [],
+            "headsign": "17620",
+            "trip_short_name": "17620"
+          },
+          "links": [
+            {
+              "type": "vehicle_journey",
+              "id": "vehicle_journey:SNCF:2024-02-23:17620:1187:Train"
+            },
+            {
+              "type": "line",
+              "id": "line:SNCF:FR:Line::D02BC35E-F58E-45E7-968F-42B8AB630E6E:"
+            },
+            {
+              "type": "route",
+              "id": "route:SNCF:FR:Line::D02BC35E-F58E-45E7-968F-42B8AB630E6E:"
+            },
+            {
+              "type": "commercial_mode",
+              "id": "commercial_mode:TER"
+            },
+            {
+              "type": "physical_mode",
+              "id": "physical_mode:Train"
+            },
+            {
+              "type": "network",
+              "id": "network:SNCF:TER"
+            }
+          ],
+          "stop_date_times": [
+            {
+              "departure_date_time": "20240223T122100",
+              "base_departure_date_time": "20240223T122100",
+              "arrival_date_time": "20240223T122100",
+              "base_arrival_date_time": "20240223T122100",
+              "stop_point": {
+                "id": "stop_point:SNCF:87747006:Train",
+                "name": "Grenoble",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T123800",
+              "base_departure_date_time": "20240223T123800",
+              "arrival_date_time": "20240223T123600",
+              "base_arrival_date_time": "20240223T123600",
+              "stop_point": {
+                "id": "stop_point:SNCF:87747287:Train",
+                "name": "Voiron",
+                "label": "Voiron (Voiron)",
+                "coord": {
+                  "lon": "5.594959",
+                  "lat": "45.364034"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T130800",
+              "base_departure_date_time": "20240223T130800",
+              "arrival_date_time": "20240223T130700",
+              "base_arrival_date_time": "20240223T130700",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723478:Train",
+                "name": "La Tour-du-Pin",
+                "label": "La Tour-du-Pin (La Tour-du-Pin)",
+                "coord": {
+                  "lon": "5.449582",
+                  "lat": "45.560287"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T131830",
+              "base_departure_date_time": "20240223T131830",
+              "arrival_date_time": "20240223T131700",
+              "base_arrival_date_time": "20240223T131700",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723429:Train",
+                "name": "Bourgoin-Jallieu",
+                "label": "Bourgoin-Jallieu (Bourgoin-Jallieu)",
+                "coord": {
+                  "lon": "5.273362",
+                  "lat": "45.583982"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T132600",
+              "base_departure_date_time": "20240223T132600",
+              "arrival_date_time": "20240223T132500",
+              "base_arrival_date_time": "20240223T132500",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723395:Train",
+                "name": "La Verpilli\u00e8re",
+                "label": "La Verpilli\u00e8re (La Verpilli\u00e8re)",
+                "coord": {
+                  "lon": "5.150785",
+                  "lat": "45.627619"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T134400",
+              "base_departure_date_time": "20240223T134400",
+              "arrival_date_time": "20240223T134400",
+              "base_arrival_date_time": "20240223T134400",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723197:Train",
+                "name": "Lyon Part Dieu",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            }
+          ]
+        },
+        {
+          "id": "qug67cGjrdnnZqDXrLR4Q5_0",
+          "duration": 0,
+          "co2_emission": {
+            "value": 0.0,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T134400",
+          "arrival_date_time": "20240223T134400",
+          "to": {
+            "id": "admin:fr:69123",
+            "name": "Lyon",
+            "quality": 0,
+            "administrative_region": {
+              "id": "admin:fr:69123",
+              "name": "Lyon",
+              "level": 8,
+              "zip_code": "",
+              "label": "Lyon",
+              "insee": "69123",
+              "coord": {
+                "lon": "4.8320114",
+                "lat": "45.7578137"
+              }
+            },
+            "embedded_type": "administrative_region"
+          },
+          "from": {
+            "id": "stop_point:SNCF:87723197:Train",
+            "name": "Lyon Part Dieu (Lyon)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87723197:Train",
+              "name": "Lyon Part Dieu",
+              "label": "Lyon Part Dieu (Lyon)",
+              "coord": {
+                "lon": "4.859409",
+                "lat": "45.760596"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:69123",
+                  "name": "Lyon",
+                  "level": 8,
+                  "zip_code": "",
+                  "label": "Lyon",
+                  "insee": "69123",
+                  "coord": {
+                    "lon": "4.8320114",
+                    "lat": "45.7578137"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87723197",
+                "name": "Lyon Part Dieu",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87723197"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87723197"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                4.859409,
+                45.760596
+              ],
+              [
+                4.8320114,
+                45.7578137
+              ]
+            ],
+            "properties": [
+              {
+                "length": 2148
+              }
+            ]
+          },
+          "mode": "walking",
+          "type": "crow_fly",
+          "links": []
+        }
+      ],
+      "links": [
+        {
+          "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=20240223T122100&count=5&first_section_mode%5B%5D=walking&last_section_mode%5B%5D=walking&min_nb_transfers=0&direct_path=none&min_nb_journeys=5&is_journey_schedules=True&allowed_id%5B%5D=stop_point%3ASNCF%3A87747006%3ATrain&allowed_id%5B%5D=stop_point%3ASNCF%3A87723197%3ATrain",
+          "templated": false,
+          "rel": "same_journey_schedules",
+          "type": "journeys"
+        },
+        {
+          "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=20240223T122100&count=1&first_section_mode%5B%5D=walking&last_section_mode%5B%5D=walking&min_nb_transfers=0&direct_path=none&min_nb_journeys=1&is_journey_schedules=True&allowed_id%5B%5D=stop_point%3ASNCF%3A87747006%3ATrain&allowed_id%5B%5D=stop_point%3ASNCF%3A87723197%3ATrain",
+          "templated": false,
+          "rel": "this_journey",
+          "type": "journeys"
+        }
+      ]
+    },
+    {
+      "duration": 4980,
+      "nb_transfers": 0,
+      "departure_date_time": "20240223T132100",
+      "arrival_date_time": "20240223T144400",
+      "requested_date_time": "20240223T120000",
+      "type": "rapid",
+      "status": "",
+      "tags": [
+        "walking",
+        "reliable",
+        "ecologic"
+      ],
+      "co2_emission": {
+        "value": 1162.2016,
+        "unit": "gEC"
+      },
+      "air_pollutants": {
+        "unit": "g",
+        "values": {
+          "nox": 0.0,
+          "pm": 0.0
+        }
+      },
+      "durations": {
+        "total": 4980,
+        "walking": 0,
+        "bike": 0,
+        "car": 0,
+        "ridesharing": 0,
+        "taxi": 0
+      },
+      "distances": {
+        "walking": 0,
+        "bike": 0,
+        "car": 0,
+        "ridesharing": 0,
+        "taxi": 0
+      },
+      "fare": {
+        "found": false,
+        "total": {
+          "value": "0.0"
+        },
+        "links": []
+      },
+      "calendars": [
+        {
+          "week_pattern": {
+            "monday": false,
+            "tuesday": false,
+            "wednesday": false,
+            "thursday": false,
+            "friday": true,
+            "saturday": false,
+            "sunday": false
+          },
+          "active_periods": [
+            {
+              "begin": "20240223",
+              "end": "20240224"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "9Ek2k2pXxkmR6WhN2b3pRT_0",
+          "duration": 0,
+          "co2_emission": {
+            "value": 0.0,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T132100",
+          "arrival_date_time": "20240223T132100",
+          "to": {
+            "id": "stop_point:SNCF:87747006:Train",
+            "name": "Grenoble (Grenoble)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87747006:Train",
+              "name": "Grenoble",
+              "label": "Grenoble (Grenoble)",
+              "coord": {
+                "lon": "5.714548",
+                "lat": "45.191491"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:38185",
+                  "name": "Grenoble",
+                  "level": 8,
+                  "zip_code": "38000;38100",
+                  "label": "Grenoble (38000-38100)",
+                  "insee": "38185",
+                  "coord": {
+                    "lon": "5.7357819",
+                    "lat": "45.1875602"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87747006",
+                "name": "Grenoble",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87747006"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87747006"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "from": {
+            "id": "admin:fr:38185",
+            "name": "Grenoble (38000-38100)",
+            "quality": 0,
+            "administrative_region": {
+              "id": "admin:fr:38185",
+              "name": "Grenoble",
+              "level": 8,
+              "zip_code": "38000;38100",
+              "label": "Grenoble (38000-38100)",
+              "insee": "38185",
+              "coord": {
+                "lon": "5.7357819",
+                "lat": "45.1875602"
+              }
+            },
+            "embedded_type": "administrative_region"
+          },
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                5.7357819,
+                45.1875602
+              ],
+              [
+                5.714548,
+                45.191491
+              ]
+            ],
+            "properties": [
+              {
+                "length": 1720
+              }
+            ]
+          },
+          "mode": "walking",
+          "type": "crow_fly",
+          "links": []
+        },
+        {
+          "id": "section_3_0",
+          "duration": 4980,
+          "co2_emission": {
+            "value": 1162.2016,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T132100",
+          "arrival_date_time": "20240223T144400",
+          "base_departure_date_time": "20240223T132100",
+          "base_arrival_date_time": "20240223T144400",
+          "data_freshness": "base_schedule",
+          "to": {
+            "id": "stop_point:SNCF:87723197:Train",
+            "name": "Lyon Part Dieu (Lyon)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87723197:Train",
+              "name": "Lyon Part Dieu",
+              "label": "Lyon Part Dieu (Lyon)",
+              "coord": {
+                "lon": "4.859409",
+                "lat": "45.760596"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:69123",
+                  "name": "Lyon",
+                  "level": 8,
+                  "zip_code": "",
+                  "label": "Lyon",
+                  "insee": "69123",
+                  "coord": {
+                    "lon": "4.8320114",
+                    "lat": "45.7578137"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87723197",
+                "name": "Lyon Part Dieu",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87723197"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87723197"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "from": {
+            "id": "stop_point:SNCF:87747006:Train",
+            "name": "Grenoble (Grenoble)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87747006:Train",
+              "name": "Grenoble",
+              "label": "Grenoble (Grenoble)",
+              "coord": {
+                "lon": "5.714548",
+                "lat": "45.191491"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:38185",
+                  "name": "Grenoble",
+                  "level": 8,
+                  "zip_code": "38000;38100",
+                  "label": "Grenoble (38000-38100)",
+                  "insee": "38185",
+                  "coord": {
+                    "lon": "5.7357819",
+                    "lat": "45.1875602"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87747006",
+                "name": "Grenoble",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87747006"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87747006"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "additional_informations": [
+            "regular"
+          ],
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                5.714548,
+                45.191491
+              ],
+              [
+                5.594959,
+                45.364034
+              ],
+              [
+                5.449582,
+                45.560287
+              ],
+              [
+                5.273362,
+                45.583982
+              ],
+              [
+                5.150785,
+                45.627619
+              ],
+              [
+                4.859409,
+                45.760596
+              ]
+            ],
+            "properties": [
+              {
+                "length": 97664
+              }
+            ]
+          },
+          "type": "public_transport",
+          "display_informations": {
+            "commercial_mode": "TER",
+            "network": "TER",
+            "direction": "Lyon Part Dieu (Lyon)",
+            "label": "Lyon Part Dieu - Grenoble",
+            "color": "",
+            "code": "",
+            "name": "Lyon Part Dieu - Grenoble",
+            "links": [
+              {
+                "templated": false,
+                "rel": "terminus",
+                "internal": true,
+                "type": "stop_area",
+                "id": "stop_area:SNCF:87747006"
+              }
+            ],
+            "text_color": "",
+            "description": "",
+            "physical_mode": "TER / Intercit\u00e9s",
+            "equipments": [],
+            "headsign": "17622",
+            "trip_short_name": "17622"
+          },
+          "links": [
+            {
+              "type": "vehicle_journey",
+              "id": "vehicle_journey:SNCF:2024-02-23:17622:1187:Train"
+            },
+            {
+              "type": "line",
+              "id": "line:SNCF:FR:Line::D02BC35E-F58E-45E7-968F-42B8AB630E6E:"
+            },
+            {
+              "type": "route",
+              "id": "route:SNCF:FR:Line::D02BC35E-F58E-45E7-968F-42B8AB630E6E:"
+            },
+            {
+              "type": "commercial_mode",
+              "id": "commercial_mode:TER"
+            },
+            {
+              "type": "physical_mode",
+              "id": "physical_mode:Train"
+            },
+            {
+              "type": "network",
+              "id": "network:SNCF:TER"
+            }
+          ],
+          "stop_date_times": [
+            {
+              "departure_date_time": "20240223T132100",
+              "base_departure_date_time": "20240223T132100",
+              "arrival_date_time": "20240223T132100",
+              "base_arrival_date_time": "20240223T132100",
+              "stop_point": {
+                "id": "stop_point:SNCF:87747006:Train",
+                "name": "Grenoble",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T133800",
+              "base_departure_date_time": "20240223T133800",
+              "arrival_date_time": "20240223T133600",
+              "base_arrival_date_time": "20240223T133600",
+              "stop_point": {
+                "id": "stop_point:SNCF:87747287:Train",
+                "name": "Voiron",
+                "label": "Voiron (Voiron)",
+                "coord": {
+                  "lon": "5.594959",
+                  "lat": "45.364034"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T140800",
+              "base_departure_date_time": "20240223T140800",
+              "arrival_date_time": "20240223T140700",
+              "base_arrival_date_time": "20240223T140700",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723478:Train",
+                "name": "La Tour-du-Pin",
+                "label": "La Tour-du-Pin (La Tour-du-Pin)",
+                "coord": {
+                  "lon": "5.449582",
+                  "lat": "45.560287"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T141830",
+              "base_departure_date_time": "20240223T141830",
+              "arrival_date_time": "20240223T141700",
+              "base_arrival_date_time": "20240223T141700",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723429:Train",
+                "name": "Bourgoin-Jallieu",
+                "label": "Bourgoin-Jallieu (Bourgoin-Jallieu)",
+                "coord": {
+                  "lon": "5.273362",
+                  "lat": "45.583982"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T142600",
+              "base_departure_date_time": "20240223T142600",
+              "arrival_date_time": "20240223T142500",
+              "base_arrival_date_time": "20240223T142500",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723395:Train",
+                "name": "La Verpilli\u00e8re",
+                "label": "La Verpilli\u00e8re (La Verpilli\u00e8re)",
+                "coord": {
+                  "lon": "5.150785",
+                  "lat": "45.627619"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T144400",
+              "base_departure_date_time": "20240223T144400",
+              "arrival_date_time": "20240223T144400",
+              "base_arrival_date_time": "20240223T144400",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723197:Train",
+                "name": "Lyon Part Dieu",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            }
+          ]
+        },
+        {
+          "id": "zD66AfQmznDshVhXyLNp4U_0",
+          "duration": 0,
+          "co2_emission": {
+            "value": 0.0,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T144400",
+          "arrival_date_time": "20240223T144400",
+          "to": {
+            "id": "admin:fr:69123",
+            "name": "Lyon",
+            "quality": 0,
+            "administrative_region": {
+              "id": "admin:fr:69123",
+              "name": "Lyon",
+              "level": 8,
+              "zip_code": "",
+              "label": "Lyon",
+              "insee": "69123",
+              "coord": {
+                "lon": "4.8320114",
+                "lat": "45.7578137"
+              }
+            },
+            "embedded_type": "administrative_region"
+          },
+          "from": {
+            "id": "stop_point:SNCF:87723197:Train",
+            "name": "Lyon Part Dieu (Lyon)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87723197:Train",
+              "name": "Lyon Part Dieu",
+              "label": "Lyon Part Dieu (Lyon)",
+              "coord": {
+                "lon": "4.859409",
+                "lat": "45.760596"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:69123",
+                  "name": "Lyon",
+                  "level": 8,
+                  "zip_code": "",
+                  "label": "Lyon",
+                  "insee": "69123",
+                  "coord": {
+                    "lon": "4.8320114",
+                    "lat": "45.7578137"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87723197",
+                "name": "Lyon Part Dieu",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87723197"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87723197"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                4.859409,
+                45.760596
+              ],
+              [
+                4.8320114,
+                45.7578137
+              ]
+            ],
+            "properties": [
+              {
+                "length": 2148
+              }
+            ]
+          },
+          "mode": "walking",
+          "type": "crow_fly",
+          "links": []
+        }
+      ],
+      "links": [
+        {
+          "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=20240223T132100&count=5&first_section_mode%5B%5D=walking&last_section_mode%5B%5D=walking&min_nb_transfers=0&direct_path=none&min_nb_journeys=5&is_journey_schedules=True&allowed_id%5B%5D=stop_point%3ASNCF%3A87747006%3ATrain&allowed_id%5B%5D=stop_point%3ASNCF%3A87723197%3ATrain",
+          "templated": false,
+          "rel": "same_journey_schedules",
+          "type": "journeys"
+        },
+        {
+          "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=20240223T132100&count=1&first_section_mode%5B%5D=walking&last_section_mode%5B%5D=walking&min_nb_transfers=0&direct_path=none&min_nb_journeys=1&is_journey_schedules=True&allowed_id%5B%5D=stop_point%3ASNCF%3A87747006%3ATrain&allowed_id%5B%5D=stop_point%3ASNCF%3A87723197%3ATrain",
+          "templated": false,
+          "rel": "this_journey",
+          "type": "journeys"
+        }
+      ]
+    },
+    {
+      "duration": 4980,
+      "nb_transfers": 0,
+      "departure_date_time": "20240223T142100",
+      "arrival_date_time": "20240223T154400",
+      "requested_date_time": "20240223T120000",
+      "type": "rapid",
+      "status": "",
+      "tags": [
+        "walking",
+        "reliable",
+        "ecologic"
+      ],
+      "co2_emission": {
+        "value": 1162.2016,
+        "unit": "gEC"
+      },
+      "air_pollutants": {
+        "unit": "g",
+        "values": {
+          "nox": 0.0,
+          "pm": 0.0
+        }
+      },
+      "durations": {
+        "total": 4980,
+        "walking": 0,
+        "bike": 0,
+        "car": 0,
+        "ridesharing": 0,
+        "taxi": 0
+      },
+      "distances": {
+        "walking": 0,
+        "bike": 0,
+        "car": 0,
+        "ridesharing": 0,
+        "taxi": 0
+      },
+      "fare": {
+        "found": false,
+        "total": {
+          "value": "0.0"
+        },
+        "links": []
+      },
+      "calendars": [
+        {
+          "week_pattern": {
+            "monday": false,
+            "tuesday": false,
+            "wednesday": false,
+            "thursday": false,
+            "friday": true,
+            "saturday": false,
+            "sunday": false
+          },
+          "active_periods": [
+            {
+              "begin": "20240223",
+              "end": "20240224"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "dqUQyLqEyr3DKKtbTTXSaV_0",
+          "duration": 0,
+          "co2_emission": {
+            "value": 0.0,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T142100",
+          "arrival_date_time": "20240223T142100",
+          "to": {
+            "id": "stop_point:SNCF:87747006:Train",
+            "name": "Grenoble (Grenoble)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87747006:Train",
+              "name": "Grenoble",
+              "label": "Grenoble (Grenoble)",
+              "coord": {
+                "lon": "5.714548",
+                "lat": "45.191491"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:38185",
+                  "name": "Grenoble",
+                  "level": 8,
+                  "zip_code": "38000;38100",
+                  "label": "Grenoble (38000-38100)",
+                  "insee": "38185",
+                  "coord": {
+                    "lon": "5.7357819",
+                    "lat": "45.1875602"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87747006",
+                "name": "Grenoble",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87747006"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87747006"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "from": {
+            "id": "admin:fr:38185",
+            "name": "Grenoble (38000-38100)",
+            "quality": 0,
+            "administrative_region": {
+              "id": "admin:fr:38185",
+              "name": "Grenoble",
+              "level": 8,
+              "zip_code": "38000;38100",
+              "label": "Grenoble (38000-38100)",
+              "insee": "38185",
+              "coord": {
+                "lon": "5.7357819",
+                "lat": "45.1875602"
+              }
+            },
+            "embedded_type": "administrative_region"
+          },
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                5.7357819,
+                45.1875602
+              ],
+              [
+                5.714548,
+                45.191491
+              ]
+            ],
+            "properties": [
+              {
+                "length": 1720
+              }
+            ]
+          },
+          "mode": "walking",
+          "type": "crow_fly",
+          "links": []
+        },
+        {
+          "id": "section_1_0",
+          "duration": 4980,
+          "co2_emission": {
+            "value": 1162.2016,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T142100",
+          "arrival_date_time": "20240223T154400",
+          "base_departure_date_time": "20240223T142100",
+          "base_arrival_date_time": "20240223T154400",
+          "data_freshness": "base_schedule",
+          "to": {
+            "id": "stop_point:SNCF:87723197:Train",
+            "name": "Lyon Part Dieu (Lyon)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87723197:Train",
+              "name": "Lyon Part Dieu",
+              "label": "Lyon Part Dieu (Lyon)",
+              "coord": {
+                "lon": "4.859409",
+                "lat": "45.760596"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:69123",
+                  "name": "Lyon",
+                  "level": 8,
+                  "zip_code": "",
+                  "label": "Lyon",
+                  "insee": "69123",
+                  "coord": {
+                    "lon": "4.8320114",
+                    "lat": "45.7578137"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87723197",
+                "name": "Lyon Part Dieu",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87723197"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87723197"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "from": {
+            "id": "stop_point:SNCF:87747006:Train",
+            "name": "Grenoble (Grenoble)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87747006:Train",
+              "name": "Grenoble",
+              "label": "Grenoble (Grenoble)",
+              "coord": {
+                "lon": "5.714548",
+                "lat": "45.191491"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:38185",
+                  "name": "Grenoble",
+                  "level": 8,
+                  "zip_code": "38000;38100",
+                  "label": "Grenoble (38000-38100)",
+                  "insee": "38185",
+                  "coord": {
+                    "lon": "5.7357819",
+                    "lat": "45.1875602"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87747006",
+                "name": "Grenoble",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87747006"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87747006"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "additional_informations": [
+            "regular"
+          ],
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                5.714548,
+                45.191491
+              ],
+              [
+                5.594959,
+                45.364034
+              ],
+              [
+                5.449582,
+                45.560287
+              ],
+              [
+                5.273362,
+                45.583982
+              ],
+              [
+                5.150785,
+                45.627619
+              ],
+              [
+                4.859409,
+                45.760596
+              ]
+            ],
+            "properties": [
+              {
+                "length": 97664
+              }
+            ]
+          },
+          "type": "public_transport",
+          "display_informations": {
+            "commercial_mode": "TER",
+            "network": "TER",
+            "direction": "Lyon Part Dieu (Lyon)",
+            "label": "Lyon Part Dieu - Grenoble",
+            "color": "",
+            "code": "",
+            "name": "Lyon Part Dieu - Grenoble",
+            "links": [
+              {
+                "templated": false,
+                "rel": "terminus",
+                "internal": true,
+                "type": "stop_area",
+                "id": "stop_area:SNCF:87747006"
+              }
+            ],
+            "text_color": "",
+            "description": "",
+            "physical_mode": "TER / Intercit\u00e9s",
+            "equipments": [],
+            "headsign": "17624",
+            "trip_short_name": "17624"
+          },
+          "links": [
+            {
+              "type": "vehicle_journey",
+              "id": "vehicle_journey:SNCF:2024-02-23:17624:1187:Train"
+            },
+            {
+              "type": "line",
+              "id": "line:SNCF:FR:Line::D02BC35E-F58E-45E7-968F-42B8AB630E6E:"
+            },
+            {
+              "type": "route",
+              "id": "route:SNCF:FR:Line::D02BC35E-F58E-45E7-968F-42B8AB630E6E:"
+            },
+            {
+              "type": "commercial_mode",
+              "id": "commercial_mode:TER"
+            },
+            {
+              "type": "physical_mode",
+              "id": "physical_mode:Train"
+            },
+            {
+              "type": "network",
+              "id": "network:SNCF:TER"
+            }
+          ],
+          "stop_date_times": [
+            {
+              "departure_date_time": "20240223T142100",
+              "base_departure_date_time": "20240223T142100",
+              "arrival_date_time": "20240223T142100",
+              "base_arrival_date_time": "20240223T142100",
+              "stop_point": {
+                "id": "stop_point:SNCF:87747006:Train",
+                "name": "Grenoble",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T143800",
+              "base_departure_date_time": "20240223T143800",
+              "arrival_date_time": "20240223T143600",
+              "base_arrival_date_time": "20240223T143600",
+              "stop_point": {
+                "id": "stop_point:SNCF:87747287:Train",
+                "name": "Voiron",
+                "label": "Voiron (Voiron)",
+                "coord": {
+                  "lon": "5.594959",
+                  "lat": "45.364034"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T150700",
+              "base_departure_date_time": "20240223T150700",
+              "arrival_date_time": "20240223T150600",
+              "base_arrival_date_time": "20240223T150600",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723478:Train",
+                "name": "La Tour-du-Pin",
+                "label": "La Tour-du-Pin (La Tour-du-Pin)",
+                "coord": {
+                  "lon": "5.449582",
+                  "lat": "45.560287"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T151830",
+              "base_departure_date_time": "20240223T151830",
+              "arrival_date_time": "20240223T151700",
+              "base_arrival_date_time": "20240223T151700",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723429:Train",
+                "name": "Bourgoin-Jallieu",
+                "label": "Bourgoin-Jallieu (Bourgoin-Jallieu)",
+                "coord": {
+                  "lon": "5.273362",
+                  "lat": "45.583982"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T152600",
+              "base_departure_date_time": "20240223T152600",
+              "arrival_date_time": "20240223T152500",
+              "base_arrival_date_time": "20240223T152500",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723395:Train",
+                "name": "La Verpilli\u00e8re",
+                "label": "La Verpilli\u00e8re (La Verpilli\u00e8re)",
+                "coord": {
+                  "lon": "5.150785",
+                  "lat": "45.627619"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T154400",
+              "base_departure_date_time": "20240223T154400",
+              "arrival_date_time": "20240223T154400",
+              "base_arrival_date_time": "20240223T154400",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723197:Train",
+                "name": "Lyon Part Dieu",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            }
+          ]
+        },
+        {
+          "id": "oaJ3XWmqQ5t9Wq4oCaXp8f_0",
+          "duration": 0,
+          "co2_emission": {
+            "value": 0.0,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T154400",
+          "arrival_date_time": "20240223T154400",
+          "to": {
+            "id": "admin:fr:69123",
+            "name": "Lyon",
+            "quality": 0,
+            "administrative_region": {
+              "id": "admin:fr:69123",
+              "name": "Lyon",
+              "level": 8,
+              "zip_code": "",
+              "label": "Lyon",
+              "insee": "69123",
+              "coord": {
+                "lon": "4.8320114",
+                "lat": "45.7578137"
+              }
+            },
+            "embedded_type": "administrative_region"
+          },
+          "from": {
+            "id": "stop_point:SNCF:87723197:Train",
+            "name": "Lyon Part Dieu (Lyon)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87723197:Train",
+              "name": "Lyon Part Dieu",
+              "label": "Lyon Part Dieu (Lyon)",
+              "coord": {
+                "lon": "4.859409",
+                "lat": "45.760596"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:69123",
+                  "name": "Lyon",
+                  "level": 8,
+                  "zip_code": "",
+                  "label": "Lyon",
+                  "insee": "69123",
+                  "coord": {
+                    "lon": "4.8320114",
+                    "lat": "45.7578137"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87723197",
+                "name": "Lyon Part Dieu",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87723197"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87723197"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                4.859409,
+                45.760596
+              ],
+              [
+                4.8320114,
+                45.7578137
+              ]
+            ],
+            "properties": [
+              {
+                "length": 2148
+              }
+            ]
+          },
+          "mode": "walking",
+          "type": "crow_fly",
+          "links": []
+        }
+      ],
+      "links": [
+        {
+          "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=20240223T142100&count=5&first_section_mode%5B%5D=walking&last_section_mode%5B%5D=walking&min_nb_transfers=0&direct_path=none&min_nb_journeys=5&is_journey_schedules=True&allowed_id%5B%5D=stop_point%3ASNCF%3A87747006%3ATrain&allowed_id%5B%5D=stop_point%3ASNCF%3A87723197%3ATrain",
+          "templated": false,
+          "rel": "same_journey_schedules",
+          "type": "journeys"
+        },
+        {
+          "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=20240223T142100&count=1&first_section_mode%5B%5D=walking&last_section_mode%5B%5D=walking&min_nb_transfers=0&direct_path=none&min_nb_journeys=1&is_journey_schedules=True&allowed_id%5B%5D=stop_point%3ASNCF%3A87747006%3ATrain&allowed_id%5B%5D=stop_point%3ASNCF%3A87723197%3ATrain",
+          "templated": false,
+          "rel": "this_journey",
+          "type": "journeys"
+        }
+      ]
+    },
+    {
+      "duration": 5040,
+      "nb_transfers": 0,
+      "departure_date_time": "20240223T145100",
+      "arrival_date_time": "20240223T161500",
+      "requested_date_time": "20240223T120000",
+      "type": "rapid",
+      "status": "SIGNIFICANT_DELAYS",
+      "tags": [
+        "walking",
+        "ecologic"
+      ],
+      "co2_emission": {
+        "value": 1162.2016,
+        "unit": "gEC"
+      },
+      "air_pollutants": {
+        "unit": "g",
+        "values": {
+          "nox": 0.0,
+          "pm": 0.0
+        }
+      },
+      "durations": {
+        "total": 5040,
+        "walking": 0,
+        "bike": 0,
+        "car": 0,
+        "ridesharing": 0,
+        "taxi": 0
+      },
+      "distances": {
+        "walking": 0,
+        "bike": 0,
+        "car": 0,
+        "ridesharing": 0,
+        "taxi": 0
+      },
+      "fare": {
+        "found": false,
+        "total": {
+          "value": "0.0"
+        },
+        "links": []
+      },
+      "calendars": [
+        {
+          "week_pattern": {
+            "monday": false,
+            "tuesday": false,
+            "wednesday": false,
+            "thursday": false,
+            "friday": true,
+            "saturday": false,
+            "sunday": false
+          },
+          "active_periods": [
+            {
+              "begin": "20240223",
+              "end": "20240224"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "uuHWNS3DMmXA66diikS3hX_0",
+          "duration": 0,
+          "co2_emission": {
+            "value": 0.0,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T145100",
+          "arrival_date_time": "20240223T145100",
+          "to": {
+            "id": "stop_point:SNCF:87747006:Train",
+            "name": "Grenoble (Grenoble)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87747006:Train",
+              "name": "Grenoble",
+              "label": "Grenoble (Grenoble)",
+              "coord": {
+                "lon": "5.714548",
+                "lat": "45.191491"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:38185",
+                  "name": "Grenoble",
+                  "level": 8,
+                  "zip_code": "38000;38100",
+                  "label": "Grenoble (38000-38100)",
+                  "insee": "38185",
+                  "coord": {
+                    "lon": "5.7357819",
+                    "lat": "45.1875602"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87747006",
+                "name": "Grenoble",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87747006"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87747006"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "from": {
+            "id": "admin:fr:38185",
+            "name": "Grenoble (38000-38100)",
+            "quality": 0,
+            "administrative_region": {
+              "id": "admin:fr:38185",
+              "name": "Grenoble",
+              "level": 8,
+              "zip_code": "38000;38100",
+              "label": "Grenoble (38000-38100)",
+              "insee": "38185",
+              "coord": {
+                "lon": "5.7357819",
+                "lat": "45.1875602"
+              }
+            },
+            "embedded_type": "administrative_region"
+          },
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                5.7357819,
+                45.1875602
+              ],
+              [
+                5.714548,
+                45.191491
+              ]
+            ],
+            "properties": [
+              {
+                "length": 1720
+              }
+            ]
+          },
+          "mode": "walking",
+          "type": "crow_fly",
+          "links": []
+        },
+        {
+          "id": "section_0_0",
+          "duration": 5040,
+          "co2_emission": {
+            "value": 1162.2016,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T145100",
+          "arrival_date_time": "20240223T161500",
+          "base_departure_date_time": "20240223T145100",
+          "base_arrival_date_time": "20240223T161500",
+          "data_freshness": "base_schedule",
+          "to": {
+            "id": "stop_point:SNCF:87723197:Train",
+            "name": "Lyon Part Dieu (Lyon)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87723197:Train",
+              "name": "Lyon Part Dieu",
+              "label": "Lyon Part Dieu (Lyon)",
+              "coord": {
+                "lon": "4.859409",
+                "lat": "45.760596"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:69123",
+                  "name": "Lyon",
+                  "level": 8,
+                  "zip_code": "",
+                  "label": "Lyon",
+                  "insee": "69123",
+                  "coord": {
+                    "lon": "4.8320114",
+                    "lat": "45.7578137"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87723197",
+                "name": "Lyon Part Dieu",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87723197"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87723197"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "from": {
+            "id": "stop_point:SNCF:87747006:Train",
+            "name": "Grenoble (Grenoble)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87747006:Train",
+              "name": "Grenoble",
+              "label": "Grenoble (Grenoble)",
+              "coord": {
+                "lon": "5.714548",
+                "lat": "45.191491"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:38185",
+                  "name": "Grenoble",
+                  "level": 8,
+                  "zip_code": "38000;38100",
+                  "label": "Grenoble (38000-38100)",
+                  "insee": "38185",
+                  "coord": {
+                    "lon": "5.7357819",
+                    "lat": "45.1875602"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87747006",
+                "name": "Grenoble",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87747006"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87747006"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "additional_informations": [
+            "regular"
+          ],
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                5.714548,
+                45.191491
+              ],
+              [
+                5.594959,
+                45.364034
+              ],
+              [
+                5.449582,
+                45.560287
+              ],
+              [
+                5.273362,
+                45.583982
+              ],
+              [
+                5.150785,
+                45.627619
+              ],
+              [
+                4.859409,
+                45.760596
+              ]
+            ],
+            "properties": [
+              {
+                "length": 97664
+              }
+            ]
+          },
+          "type": "public_transport",
+          "display_informations": {
+            "commercial_mode": "TER",
+            "network": "TER",
+            "direction": "Lyon Part Dieu (Lyon)",
+            "label": "Lyon Part Dieu - Grenoble",
+            "color": "",
+            "code": "",
+            "name": "Lyon Part Dieu - Grenoble",
+            "links": [
+              {
+                "templated": false,
+                "rel": "disruptions",
+                "internal": true,
+                "type": "disruption",
+                "id": "d19a7799-6d98-457d-b94a-5b71b50a3d37"
+              },
+              {
+                "templated": false,
+                "rel": "terminus",
+                "internal": true,
+                "type": "stop_area",
+                "id": "stop_area:SNCF:87747006"
+              }
+            ],
+            "text_color": "",
+            "description": "",
+            "physical_mode": "TER / Intercit\u00e9s",
+            "equipments": [],
+            "headsign": "17696",
+            "trip_short_name": "17696"
+          },
+          "links": [
+            {
+              "type": "vehicle_journey",
+              "id": "vehicle_journey:SNCF:2024-02-23:17696:1187:Train"
+            },
+            {
+              "type": "line",
+              "id": "line:SNCF:FR:Line::D02BC35E-F58E-45E7-968F-42B8AB630E6E:"
+            },
+            {
+              "type": "route",
+              "id": "route:SNCF:FR:Line::D02BC35E-F58E-45E7-968F-42B8AB630E6E:"
+            },
+            {
+              "type": "commercial_mode",
+              "id": "commercial_mode:TER"
+            },
+            {
+              "type": "physical_mode",
+              "id": "physical_mode:Train"
+            },
+            {
+              "type": "network",
+              "id": "network:SNCF:TER"
+            }
+          ],
+          "stop_date_times": [
+            {
+              "departure_date_time": "20240223T145100",
+              "base_departure_date_time": "20240223T145100",
+              "arrival_date_time": "20240223T145100",
+              "base_arrival_date_time": "20240223T145100",
+              "stop_point": {
+                "id": "stop_point:SNCF:87747006:Train",
+                "name": "Grenoble",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T150800",
+              "base_departure_date_time": "20240223T150800",
+              "arrival_date_time": "20240223T150600",
+              "base_arrival_date_time": "20240223T150600",
+              "stop_point": {
+                "id": "stop_point:SNCF:87747287:Train",
+                "name": "Voiron",
+                "label": "Voiron (Voiron)",
+                "coord": {
+                  "lon": "5.594959",
+                  "lat": "45.364034"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T153730",
+              "base_departure_date_time": "20240223T153730",
+              "arrival_date_time": "20240223T153630",
+              "base_arrival_date_time": "20240223T153630",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723478:Train",
+                "name": "La Tour-du-Pin",
+                "label": "La Tour-du-Pin (La Tour-du-Pin)",
+                "coord": {
+                  "lon": "5.449582",
+                  "lat": "45.560287"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T154830",
+              "base_departure_date_time": "20240223T154830",
+              "arrival_date_time": "20240223T154700",
+              "base_arrival_date_time": "20240223T154700",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723429:Train",
+                "name": "Bourgoin-Jallieu",
+                "label": "Bourgoin-Jallieu (Bourgoin-Jallieu)",
+                "coord": {
+                  "lon": "5.273362",
+                  "lat": "45.583982"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T155600",
+              "base_departure_date_time": "20240223T155600",
+              "arrival_date_time": "20240223T155500",
+              "base_arrival_date_time": "20240223T155500",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723395:Train",
+                "name": "La Verpilli\u00e8re",
+                "label": "La Verpilli\u00e8re (La Verpilli\u00e8re)",
+                "coord": {
+                  "lon": "5.150785",
+                  "lat": "45.627619"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T161500",
+              "base_departure_date_time": "20240223T161500",
+              "arrival_date_time": "20240223T161500",
+              "base_arrival_date_time": "20240223T161500",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723197:Train",
+                "name": "Lyon Part Dieu",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            }
+          ]
+        },
+        {
+          "id": "LZM5SmqtrjX5oN3FWe9DxW_0",
+          "duration": 0,
+          "co2_emission": {
+            "value": 0.0,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T161500",
+          "arrival_date_time": "20240223T161500",
+          "to": {
+            "id": "admin:fr:69123",
+            "name": "Lyon",
+            "quality": 0,
+            "administrative_region": {
+              "id": "admin:fr:69123",
+              "name": "Lyon",
+              "level": 8,
+              "zip_code": "",
+              "label": "Lyon",
+              "insee": "69123",
+              "coord": {
+                "lon": "4.8320114",
+                "lat": "45.7578137"
+              }
+            },
+            "embedded_type": "administrative_region"
+          },
+          "from": {
+            "id": "stop_point:SNCF:87723197:Train",
+            "name": "Lyon Part Dieu (Lyon)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87723197:Train",
+              "name": "Lyon Part Dieu",
+              "label": "Lyon Part Dieu (Lyon)",
+              "coord": {
+                "lon": "4.859409",
+                "lat": "45.760596"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:69123",
+                  "name": "Lyon",
+                  "level": 8,
+                  "zip_code": "",
+                  "label": "Lyon",
+                  "insee": "69123",
+                  "coord": {
+                    "lon": "4.8320114",
+                    "lat": "45.7578137"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87723197",
+                "name": "Lyon Part Dieu",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87723197"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87723197"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                4.859409,
+                45.760596
+              ],
+              [
+                4.8320114,
+                45.7578137
+              ]
+            ],
+            "properties": [
+              {
+                "length": 2148
+              }
+            ]
+          },
+          "mode": "walking",
+          "type": "crow_fly",
+          "links": []
+        }
+      ],
+      "links": [
+        {
+          "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=20240223T145100&count=5&first_section_mode%5B%5D=walking&last_section_mode%5B%5D=walking&min_nb_transfers=0&direct_path=none&min_nb_journeys=5&is_journey_schedules=True&allowed_id%5B%5D=stop_point%3ASNCF%3A87747006%3ATrain&allowed_id%5B%5D=stop_point%3ASNCF%3A87723197%3ATrain",
+          "templated": false,
+          "rel": "same_journey_schedules",
+          "type": "journeys"
+        },
+        {
+          "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=20240223T145100&count=1&first_section_mode%5B%5D=walking&last_section_mode%5B%5D=walking&min_nb_transfers=0&direct_path=none&min_nb_journeys=1&is_journey_schedules=True&allowed_id%5B%5D=stop_point%3ASNCF%3A87747006%3ATrain&allowed_id%5B%5D=stop_point%3ASNCF%3A87723197%3ATrain",
+          "templated": false,
+          "rel": "this_journey",
+          "type": "journeys"
+        }
+      ]
+    },
+    {
+      "duration": 4980,
+      "nb_transfers": 0,
+      "departure_date_time": "20240223T152100",
+      "arrival_date_time": "20240223T164400",
+      "requested_date_time": "20240223T120000",
+      "type": "rapid",
+      "status": "",
+      "tags": [
+        "walking",
+        "reliable",
+        "ecologic"
+      ],
+      "co2_emission": {
+        "value": 1162.2016,
+        "unit": "gEC"
+      },
+      "air_pollutants": {
+        "unit": "g",
+        "values": {
+          "nox": 0.0,
+          "pm": 0.0
+        }
+      },
+      "durations": {
+        "total": 4980,
+        "walking": 0,
+        "bike": 0,
+        "car": 0,
+        "ridesharing": 0,
+        "taxi": 0
+      },
+      "distances": {
+        "walking": 0,
+        "bike": 0,
+        "car": 0,
+        "ridesharing": 0,
+        "taxi": 0
+      },
+      "fare": {
+        "found": false,
+        "total": {
+          "value": "0.0"
+        },
+        "links": []
+      },
+      "calendars": [
+        {
+          "week_pattern": {
+            "monday": false,
+            "tuesday": false,
+            "wednesday": false,
+            "thursday": false,
+            "friday": true,
+            "saturday": false,
+            "sunday": false
+          },
+          "active_periods": [
+            {
+              "begin": "20240223",
+              "end": "20240224"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "DcxzVWdzVtdLKgcoKGXXQk_0",
+          "duration": 0,
+          "co2_emission": {
+            "value": 0.0,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T152100",
+          "arrival_date_time": "20240223T152100",
+          "to": {
+            "id": "stop_point:SNCF:87747006:Train",
+            "name": "Grenoble (Grenoble)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87747006:Train",
+              "name": "Grenoble",
+              "label": "Grenoble (Grenoble)",
+              "coord": {
+                "lon": "5.714548",
+                "lat": "45.191491"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:38185",
+                  "name": "Grenoble",
+                  "level": 8,
+                  "zip_code": "38000;38100",
+                  "label": "Grenoble (38000-38100)",
+                  "insee": "38185",
+                  "coord": {
+                    "lon": "5.7357819",
+                    "lat": "45.1875602"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87747006",
+                "name": "Grenoble",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87747006"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87747006"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "from": {
+            "id": "admin:fr:38185",
+            "name": "Grenoble (38000-38100)",
+            "quality": 0,
+            "administrative_region": {
+              "id": "admin:fr:38185",
+              "name": "Grenoble",
+              "level": 8,
+              "zip_code": "38000;38100",
+              "label": "Grenoble (38000-38100)",
+              "insee": "38185",
+              "coord": {
+                "lon": "5.7357819",
+                "lat": "45.1875602"
+              }
+            },
+            "embedded_type": "administrative_region"
+          },
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                5.7357819,
+                45.1875602
+              ],
+              [
+                5.714548,
+                45.191491
+              ]
+            ],
+            "properties": [
+              {
+                "length": 1720
+              }
+            ]
+          },
+          "mode": "walking",
+          "type": "crow_fly",
+          "links": []
+        },
+        {
+          "id": "section_2_0",
+          "duration": 4980,
+          "co2_emission": {
+            "value": 1162.2016,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T152100",
+          "arrival_date_time": "20240223T164400",
+          "base_departure_date_time": "20240223T152100",
+          "base_arrival_date_time": "20240223T164400",
+          "data_freshness": "base_schedule",
+          "to": {
+            "id": "stop_point:SNCF:87723197:Train",
+            "name": "Lyon Part Dieu (Lyon)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87723197:Train",
+              "name": "Lyon Part Dieu",
+              "label": "Lyon Part Dieu (Lyon)",
+              "coord": {
+                "lon": "4.859409",
+                "lat": "45.760596"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:69123",
+                  "name": "Lyon",
+                  "level": 8,
+                  "zip_code": "",
+                  "label": "Lyon",
+                  "insee": "69123",
+                  "coord": {
+                    "lon": "4.8320114",
+                    "lat": "45.7578137"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87723197",
+                "name": "Lyon Part Dieu",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87723197"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87723197"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "from": {
+            "id": "stop_point:SNCF:87747006:Train",
+            "name": "Grenoble (Grenoble)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87747006:Train",
+              "name": "Grenoble",
+              "label": "Grenoble (Grenoble)",
+              "coord": {
+                "lon": "5.714548",
+                "lat": "45.191491"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:38185",
+                  "name": "Grenoble",
+                  "level": 8,
+                  "zip_code": "38000;38100",
+                  "label": "Grenoble (38000-38100)",
+                  "insee": "38185",
+                  "coord": {
+                    "lon": "5.7357819",
+                    "lat": "45.1875602"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87747006",
+                "name": "Grenoble",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87747006"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87747006"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "additional_informations": [
+            "regular"
+          ],
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                5.714548,
+                45.191491
+              ],
+              [
+                5.594959,
+                45.364034
+              ],
+              [
+                5.449582,
+                45.560287
+              ],
+              [
+                5.273362,
+                45.583982
+              ],
+              [
+                5.150785,
+                45.627619
+              ],
+              [
+                4.859409,
+                45.760596
+              ]
+            ],
+            "properties": [
+              {
+                "length": 97664
+              }
+            ]
+          },
+          "type": "public_transport",
+          "display_informations": {
+            "commercial_mode": "TER",
+            "network": "TER",
+            "direction": "Lyon Part Dieu (Lyon)",
+            "label": "Lyon Part Dieu - Grenoble",
+            "color": "",
+            "code": "",
+            "name": "Lyon Part Dieu - Grenoble",
+            "links": [
+              {
+                "templated": false,
+                "rel": "terminus",
+                "internal": true,
+                "type": "stop_area",
+                "id": "stop_area:SNCF:87747006"
+              }
+            ],
+            "text_color": "",
+            "description": "",
+            "physical_mode": "TER / Intercit\u00e9s",
+            "equipments": [],
+            "headsign": "17626",
+            "trip_short_name": "17626"
+          },
+          "links": [
+            {
+              "type": "vehicle_journey",
+              "id": "vehicle_journey:SNCF:2024-02-23:17626:1187:Train"
+            },
+            {
+              "type": "line",
+              "id": "line:SNCF:FR:Line::D02BC35E-F58E-45E7-968F-42B8AB630E6E:"
+            },
+            {
+              "type": "route",
+              "id": "route:SNCF:FR:Line::D02BC35E-F58E-45E7-968F-42B8AB630E6E:"
+            },
+            {
+              "type": "commercial_mode",
+              "id": "commercial_mode:TER"
+            },
+            {
+              "type": "physical_mode",
+              "id": "physical_mode:Train"
+            },
+            {
+              "type": "network",
+              "id": "network:SNCF:TER"
+            }
+          ],
+          "stop_date_times": [
+            {
+              "departure_date_time": "20240223T152100",
+              "base_departure_date_time": "20240223T152100",
+              "arrival_date_time": "20240223T152100",
+              "base_arrival_date_time": "20240223T152100",
+              "stop_point": {
+                "id": "stop_point:SNCF:87747006:Train",
+                "name": "Grenoble",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T153800",
+              "base_departure_date_time": "20240223T153800",
+              "arrival_date_time": "20240223T153600",
+              "base_arrival_date_time": "20240223T153600",
+              "stop_point": {
+                "id": "stop_point:SNCF:87747287:Train",
+                "name": "Voiron",
+                "label": "Voiron (Voiron)",
+                "coord": {
+                  "lon": "5.594959",
+                  "lat": "45.364034"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T160730",
+              "base_departure_date_time": "20240223T160730",
+              "arrival_date_time": "20240223T160630",
+              "base_arrival_date_time": "20240223T160630",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723478:Train",
+                "name": "La Tour-du-Pin",
+                "label": "La Tour-du-Pin (La Tour-du-Pin)",
+                "coord": {
+                  "lon": "5.449582",
+                  "lat": "45.560287"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T161830",
+              "base_departure_date_time": "20240223T161830",
+              "arrival_date_time": "20240223T161700",
+              "base_arrival_date_time": "20240223T161700",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723429:Train",
+                "name": "Bourgoin-Jallieu",
+                "label": "Bourgoin-Jallieu (Bourgoin-Jallieu)",
+                "coord": {
+                  "lon": "5.273362",
+                  "lat": "45.583982"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T162600",
+              "base_departure_date_time": "20240223T162600",
+              "arrival_date_time": "20240223T162500",
+              "base_arrival_date_time": "20240223T162500",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723395:Train",
+                "name": "La Verpilli\u00e8re",
+                "label": "La Verpilli\u00e8re (La Verpilli\u00e8re)",
+                "coord": {
+                  "lon": "5.150785",
+                  "lat": "45.627619"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            },
+            {
+              "departure_date_time": "20240223T164400",
+              "base_departure_date_time": "20240223T164400",
+              "arrival_date_time": "20240223T164400",
+              "base_arrival_date_time": "20240223T164400",
+              "stop_point": {
+                "id": "stop_point:SNCF:87723197:Train",
+                "name": "Lyon Part Dieu",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "additional_informations": [],
+              "links": []
+            }
+          ]
+        },
+        {
+          "id": "EGyuRJXhZEugKLHSd3AT9Q_0",
+          "duration": 0,
+          "co2_emission": {
+            "value": 0.0,
+            "unit": "gEC"
+          },
+          "departure_date_time": "20240223T164400",
+          "arrival_date_time": "20240223T164400",
+          "to": {
+            "id": "admin:fr:69123",
+            "name": "Lyon",
+            "quality": 0,
+            "administrative_region": {
+              "id": "admin:fr:69123",
+              "name": "Lyon",
+              "level": 8,
+              "zip_code": "",
+              "label": "Lyon",
+              "insee": "69123",
+              "coord": {
+                "lon": "4.8320114",
+                "lat": "45.7578137"
+              }
+            },
+            "embedded_type": "administrative_region"
+          },
+          "from": {
+            "id": "stop_point:SNCF:87723197:Train",
+            "name": "Lyon Part Dieu (Lyon)",
+            "quality": 0,
+            "stop_point": {
+              "id": "stop_point:SNCF:87723197:Train",
+              "name": "Lyon Part Dieu",
+              "label": "Lyon Part Dieu (Lyon)",
+              "coord": {
+                "lon": "4.859409",
+                "lat": "45.760596"
+              },
+              "links": [],
+              "administrative_regions": [
+                {
+                  "id": "admin:fr:69123",
+                  "name": "Lyon",
+                  "level": 8,
+                  "zip_code": "",
+                  "label": "Lyon",
+                  "insee": "69123",
+                  "coord": {
+                    "lon": "4.8320114",
+                    "lat": "45.7578137"
+                  }
+                }
+              ],
+              "stop_area": {
+                "id": "stop_area:SNCF:87723197",
+                "name": "Lyon Part Dieu",
+                "codes": [
+                  {
+                    "type": "source",
+                    "value": "87723197"
+                  },
+                  {
+                    "type": "uic",
+                    "value": "87723197"
+                  }
+                ],
+                "timezone": "Europe/Paris",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": []
+              },
+              "equipments": []
+            },
+            "embedded_type": "stop_point"
+          },
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                4.859409,
+                45.760596
+              ],
+              [
+                4.8320114,
+                45.7578137
+              ]
+            ],
+            "properties": [
+              {
+                "length": 2148
+              }
+            ]
+          },
+          "mode": "walking",
+          "type": "crow_fly",
+          "links": []
+        }
+      ],
+      "links": [
+        {
+          "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=20240223T152100&count=5&first_section_mode%5B%5D=walking&last_section_mode%5B%5D=walking&min_nb_transfers=0&direct_path=none&min_nb_journeys=5&is_journey_schedules=True&allowed_id%5B%5D=stop_point%3ASNCF%3A87747006%3ATrain&allowed_id%5B%5D=stop_point%3ASNCF%3A87723197%3ATrain",
+          "templated": false,
+          "rel": "same_journey_schedules",
+          "type": "journeys"
+        },
+        {
+          "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=admin%3Afr%3A38185&to=admin%3Afr%3A69123&datetime=20240223T152100&count=1&first_section_mode%5B%5D=walking&last_section_mode%5B%5D=walking&min_nb_transfers=0&direct_path=none&min_nb_journeys=1&is_journey_schedules=True&allowed_id%5B%5D=stop_point%3ASNCF%3A87747006%3ATrain&allowed_id%5B%5D=stop_point%3ASNCF%3A87723197%3ATrain",
+          "templated": false,
+          "rel": "this_journey",
+          "type": "journeys"
+        }
+      ]
+    }
+  ],
+  "tickets": [],
+  "disruptions": [
+    {
+      "id": "d19a7799-6d98-457d-b94a-5b71b50a3d37",
+      "disruption_id": "d19a7799-6d98-457d-b94a-5b71b50a3d37",
+      "impact_id": "d19a7799-6d98-457d-b94a-5b71b50a3d37",
+      "application_periods": [
+        {
+          "begin": "20240223T145100",
+          "end": "20240223T162000"
+        }
+      ],
+      "status": "past",
+      "updated_at": "20240224T080816",
+      "cause": "",
+      "severity": {
+        "name": "trip delayed",
+        "effect": "SIGNIFICANT_DELAYS",
+        "color": "#000000",
+        "priority": 42
+      },
+      "messages": [
+        {
+          "text": "R\u00e9gulation du trafic",
+          "channel": {
+            "content_type": "",
+            "id": "rt",
+            "name": "rt",
+            "types": [
+              "web",
+              "mobile"
+            ]
+          }
+        }
+      ],
+      "impacted_objects": [
+        {
+          "pt_object": {
+            "id": "SNCF:2024-02-23:17696:1187:Train",
+            "name": "SNCF:2024-02-23:17696:1187:Train",
+            "quality": 0,
+            "trip": {
+              "id": "SNCF:2024-02-23:17696:1187:Train",
+              "name": "17696"
+            },
+            "embedded_type": "trip"
+          },
+          "impacted_stops": [
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87747006:Train",
+                "name": "Grenoble",
+                "label": "Grenoble (Grenoble)",
+                "coord": {
+                  "lon": "5.714548",
+                  "lat": "45.191491"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "145100",
+              "base_departure_time": "145100",
+              "amended_arrival_time": "145600",
+              "amended_departure_time": "145600",
+              "cause": "R\u00e9gulation du trafic",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "unchanged",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87747287:Train",
+                "name": "Voiron",
+                "label": "Voiron (Voiron)",
+                "coord": {
+                  "lon": "5.594959",
+                  "lat": "45.364034"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "150600",
+              "base_departure_time": "150800",
+              "amended_arrival_time": "151100",
+              "amended_departure_time": "151300",
+              "cause": "R\u00e9gulation du trafic",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87723478:Train",
+                "name": "La Tour-du-Pin",
+                "label": "La Tour-du-Pin (La Tour-du-Pin)",
+                "coord": {
+                  "lon": "5.449582",
+                  "lat": "45.560287"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "153630",
+              "base_departure_time": "153730",
+              "amended_arrival_time": "154130",
+              "amended_departure_time": "154230",
+              "cause": "R\u00e9gulation du trafic",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87723429:Train",
+                "name": "Bourgoin-Jallieu",
+                "label": "Bourgoin-Jallieu (Bourgoin-Jallieu)",
+                "coord": {
+                  "lon": "5.273362",
+                  "lat": "45.583982"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "154700",
+              "base_departure_time": "154830",
+              "amended_arrival_time": "155200",
+              "amended_departure_time": "155330",
+              "cause": "R\u00e9gulation du trafic",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87723395:Train",
+                "name": "La Verpilli\u00e8re",
+                "label": "La Verpilli\u00e8re (La Verpilli\u00e8re)",
+                "coord": {
+                  "lon": "5.150785",
+                  "lat": "45.627619"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "155500",
+              "base_departure_time": "155600",
+              "amended_arrival_time": "160000",
+              "amended_departure_time": "160100",
+              "cause": "R\u00e9gulation du trafic",
+              "stop_time_effect": "delayed",
+              "departure_status": "delayed",
+              "arrival_status": "delayed",
+              "is_detour": false
+            },
+            {
+              "stop_point": {
+                "id": "stop_point:SNCF:87723197:Train",
+                "name": "Lyon Part Dieu",
+                "label": "Lyon Part Dieu (Lyon)",
+                "coord": {
+                  "lon": "4.859409",
+                  "lat": "45.760596"
+                },
+                "links": [],
+                "equipments": []
+              },
+              "base_arrival_time": "161500",
+              "base_departure_time": "161500",
+              "amended_arrival_time": "162000",
+              "amended_departure_time": "162000",
+              "cause": "R\u00e9gulation du trafic",
+              "stop_time_effect": "delayed",
+              "departure_status": "unchanged",
+              "arrival_status": "delayed",
+              "is_detour": false
+            }
+          ]
+        }
+      ],
+      "uri": "d19a7799-6d98-457d-b94a-5b71b50a3d37",
+      "disruption_uri": "d19a7799-6d98-457d-b94a-5b71b50a3d37",
+      "contributor": "realtime.sncf.piv"
+    }
+  ],
+  "terminus": [
+    {
+      "id": "stop_area:SNCF:87747006",
+      "name": "Grenoble",
+      "codes": [
+        {
+          "type": "source",
+          "value": "87747006"
+        },
+        {
+          "type": "uic",
+          "value": "87747006"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Grenoble (Grenoble)",
+      "coord": {
+        "lon": "5.714548",
+        "lat": "45.191491"
+      },
+      "links": []
+    }
+  ],
+  "context": {
+    "car_direct_path": {
+      "co2_emission": {
+        "value": 23554.6445911545,
+        "unit": "gEC"
+      },
+      "air_pollutants": {
+        "unit": "g",
+        "values": {
+          "nox": 41.7232,
+          "pm": 5.3102
+        }
+      }
+    },
+    "current_datetime": "20240224T164152",
+    "timezone": "Europe/Paris"
+  },
+  "notes": [],
+  "exceptions": []
+}

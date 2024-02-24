@@ -1,7 +1,7 @@
-from typing import List
 import requests
+from domains.sncf_api.models.JourneysApiResponse import JourneysApiResponse
 
-from domains.sncf_api.model import Place, PlacesApiResponse
+from domains.sncf_api.models.PlacesApiResponse import PlacesApiResponse
 
 
 class SNCF_API_Client:
@@ -10,7 +10,7 @@ class SNCF_API_Client:
         self.base_url = "https://api.sncf.com/v1/"
         self.headers = {"Authorization": self.api_key}
 
-    def _make_request(self, endpoint, params=None):
+    def _make_request(self, endpoint, params: dict = None):
         url = self.base_url + endpoint
 
         try:
@@ -36,14 +36,16 @@ class SNCF_API_Client:
 
         return PlacesApiResponse(**data)
 
-    def fetch_travels(self, origin, destination, count=5):
-        endpoint = "itineraries"
+    def fetch_travels(
+        self, from_place_id, destination_place_id, datetime, count=5
+    ) -> JourneysApiResponse:
+        endpoint = "coverage/sncf/journeys"
         # Parameters for the API request
         params = {
-            "from": origin,
-            "to": destination,
-            "datetime": "2024-02-23T12:00:00",  # Date and time of departure in ISO format
+            "from": from_place_id,
+            "to": destination_place_id,
+            "datetime": datetime,  # Date and time of departure in ISO format e.g "2024-02-23T12:00:00"
             "count": count,  # Number of journeys to retrieve
         }
-
-        return self._fetch_data(endpoint, params)
+        data = self._fetch_data(endpoint, params)
+        return data
