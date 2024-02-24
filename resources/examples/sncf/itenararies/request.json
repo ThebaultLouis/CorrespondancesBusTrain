@@ -1,0 +1,80 @@
+{
+	"directJourney": false,
+	"forceDisplayResults": true,
+	"itineraryId": "90b2e138-ffbf-40fd-8af5-f217ab34e70b",
+	"mainJourney": {
+		"destination": {
+			"codes": [],
+			"geolocation": false,
+			"id": "CITY_FR_6455259",
+			"label": "Paris"
+		},
+		"origin": {
+			"codes": [
+				{
+					"type": "RESARAIL",
+					"value": "FRGNL"
+				}
+			],
+			"geolocation": false,
+			"id": "RESARAIL_LOC_FRGNL",
+			"label": "Grenoble",
+			"resarailCode": "FRGNL"
+		}
+	},
+	"metadataY": {
+		"decisionAction": "OUTWARD DATE"
+	},
+	"passengers": [
+		{
+			"age": 26,
+			"customerId": "100027340532",
+			"dateOfBirth": "1998-02-02",
+			"discountCards": [
+				{
+					"code": "YOUNG_PASS",
+					"label": "Carte Avantage Jeune",
+					"number": "29090104632233755",
+					"numberLabel": "N° 29090104632233755",
+					"validityDateLabel": {
+						"label": "Valide jusqu'au : 21 déc. 2024",
+						"semanticLabel": "Valide jusqu'au : 21 décembre 2024"
+					}
+				}
+			],
+			"discountCardsSection": {
+				"accountCardsLabel": "Vos cartes de réduction",
+				"addAnotherCardLabel": "Voulez-vous ajouter une autre carte pour cette recherche ?",
+				"addCardLabel": "Voulez-vous ajouter une carte pour cette recherche ?"
+			},
+			"displayName": "Louis Thebault",
+			"firstName": "Louis",
+			"id": "dcff2a54-35fd-4696-930c-fc64eccd6db3",
+			"initials": "LT",
+			"lastName": "Thebault",
+			"typology": "YOUNG",
+			"withoutSeatAssignment": false
+		}
+	],
+	"pets": [],
+	"schedule": {
+		"inward": {
+			"date": "2024-04-07T04:00:00.000Z"
+		},
+		"outward": {
+			"arrivalAt": false,
+			"date": "2024-04-05T04:00:00.000Z"
+		}
+	},
+	"shortItineraryFilters": {
+		"excludableConnections": [],
+		"excludableLineCategories": [],
+		"includibleTransportTypes": [],
+		"wheelchairAccessible": "NOT_SELECTED"
+	},
+	"strictMode": false,
+	"trainExpected": true,
+	"transporterLabels": [],
+	"userNavigationContext": [],
+	"wishBike": false
+}
