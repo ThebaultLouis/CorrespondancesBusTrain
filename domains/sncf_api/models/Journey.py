@@ -1,4 +1,4 @@
-from domains.sncf_api.models.ApiResponse import Link
+from domains.sncf_api.models.ApiResponses.Common import Link
 
 
 class Journey:

@@ -1,7 +1,7 @@
 import requests
-from domains.sncf_api.models.JourneysApiResponse import JourneysApiResponse
 
-from domains.sncf_api.models.PlacesApiResponse import PlacesApiResponse
+from domains.sncf_api.models.ApiResponses.JourneysApiResponse import JourneysApiResponse
+from domains.sncf_api.models.ApiResponses.PlacesApiResponse import PlacesApiResponse
 
 
 class SNCF_API_Client:
@@ -36,8 +36,8 @@ class SNCF_API_Client:
 
         return PlacesApiResponse(**data)
 
-    def fetch_travels(
-        self, from_place_id, destination_place_id, datetime, count=5
+    def fetch_journeys(
+        self, from_place_id, destination_place_id, datetime, count=50
     ) -> JourneysApiResponse:
         endpoint = "coverage/sncf/journeys"
         # Parameters for the API request

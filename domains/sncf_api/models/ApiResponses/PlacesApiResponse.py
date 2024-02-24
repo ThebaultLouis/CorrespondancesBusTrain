@@ -1,4 +1,4 @@
-from domains.sncf_api.models.ApiResponse import FeedPublisher
+from domains.sncf_api.models.ApiResponses.Common import FeedPublisher
 from domains.sncf_api.models.Place import Place
 
 

@@ -1,4 +1,4 @@
-from domains.sncf_api.models.ApiResponse import FeedPublisher, Link
+from domains.sncf_api.models.ApiResponses.Common import FeedPublisher, Link
 from domains.sncf_api.models.Journey import Journey
 
 
