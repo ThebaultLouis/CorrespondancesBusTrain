@@ -1,3 +1,4 @@
+import os
 import requests
 
 from domains.sncf_api.models.ApiResponses.JourneysApiResponse import JourneysApiResponse
@@ -5,8 +6,9 @@ from domains.sncf_api.models.ApiResponses.PlacesApiResponse import PlacesApiResp
 
 
 class SNCF_API_Client:
-    def __init__(self, api_key):
-        self.api_key = api_key
+
+    def __init__(self):
+        self.api_key = os.environ.get("SNCF_API_KEY")
         self.base_url = "https://api.sncf.com/v1/"
         self.headers = {"Authorization": self.api_key}
 
@@ -29,16 +31,14 @@ class SNCF_API_Client:
         endpoint = "coverage/sncf/commercial_modes"
         return self._fetch_data(endpoint)
 
-    def fetch_places(self, query) -> PlacesApiResponse:
+    def fetch_places(self, query):
         endpoint = "coverage/sncf/places"
         params = {"q": query, "type": "administrative_region"}
         data = self._fetch_data(endpoint, params)
 
         return PlacesApiResponse(**data)
 
-    def fetch_journeys(
-        self, from_place_id, destination_place_id, datetime, count=50
-    ) -> JourneysApiResponse:
+    def fetch_journeys(self, from_place_id, destination_place_id, datetime, count=50):
         endpoint = "coverage/sncf/journeys"
         # Parameters for the API request
         params = {
@@ -48,4 +48,4 @@ class SNCF_API_Client:
             "count": count,  # Number of journeys to retrieve
         }
         data = self._fetch_data(endpoint, params)
-        return data
+        return JourneysApiResponse(**data)

@@ -12,6 +12,18 @@ Create a .env file with the following environment variables
 SNCF_API_KEY
 ```
 
+1. Build
+
+```{python}
+python3 build.py
+```
+
+2. Run
+
+```{python}
+python3 main.py
+```
+
 ## Resources
 
 - <https://doc.navitia.io/#getting-started>
