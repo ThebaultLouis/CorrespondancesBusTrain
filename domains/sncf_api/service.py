@@ -23,8 +23,9 @@ class SNCF_API_SERVICE:
 
     def fetch_all_journeys(self, from_place_id, destination_place_id, datetime):
         journeys: list[Journey] = []
-        self.sncf_api_client.fetch_journeys(
-            from_place_id, destination_place_id, datetime
+        response = self.sncf_api_client.fetch_journeys(
+            from_place_id, destination_place_id, datetime, count=100
         )
+        journeys = response.journeys
 
         return journeys

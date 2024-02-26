@@ -38,7 +38,7 @@ class SNCF_API_Client:
 
         return PlacesApiResponse(**data)
 
-    def fetch_journeys(self, from_place_id, destination_place_id, datetime, count=50):
+    def fetch_journeys(self, from_place_id, destination_place_id, datetime, count=5):
         endpoint = "coverage/sncf/journeys"
         # Parameters for the API request
         params = {

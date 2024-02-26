@@ -1,9 +1,6 @@
-import json
 import os
 
 from dotenv import load_dotenv
-
-from domains.sncf_api.files import SNCF_API_FILES
 from domains.sncf_api.service import SNCF_API_SERVICE
 
 
@@ -18,6 +15,17 @@ def build_enum_from_dict(enumDict: dict, enumClassName: str, file_path: str):
         print(f"Enum class has been written to {file_path}")
 
 
+def create_init_files(path):
+    os.makedirs(path, exist_ok=True)
+    current_directory = path
+    while current_directory:
+        init_file = os.path.join(current_directory, "__init__.py")
+        if not os.path.exists(init_file):
+            with open(init_file, "w") as f:
+                pass  # Creating an empty __init__.py file
+        current_directory = os.path.dirname(current_directory)
+
+
 def build_sncf_api_city_ids_enum():
     # sncf_api_files = SNCF_API_FILES()
     # city_id_by_city_names = sncf_api_files.read_city_id_by_city_names_from_files()
@@ -25,8 +33,8 @@ def build_sncf_api_city_ids_enum():
     city_names = ["Grenoble", "Lyon", "Paris"]
     city_id_by_city_names = sncf_api_service.fetch_city_id_by_city_names(city_names)
 
-    build_output_directory = "build/python/sncf_api/"
-    os.makedirs(build_output_directory, exist_ok=True)
+    build_output_directory = os.path.join("build_python", "sncf_api")
+    create_init_files(build_output_directory)
     file_name = "sncf_api_city_ids.py"
     file_path = os.path.join(build_output_directory, file_name)
 
