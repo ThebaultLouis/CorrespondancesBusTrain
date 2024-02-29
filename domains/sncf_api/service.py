@@ -1,5 +1,7 @@
+from typing import List
 from domains.sncf_api.client import SNCF_API_Client
 from domains.sncf_api.models.Journey import Journey
+from domains.sncf_api.models.Place import Place
 
 
 class SNCF_API_SERVICE:
@@ -21,11 +23,26 @@ class SNCF_API_SERVICE:
 
         return {city.administrative_region.name: city.id for city in cities}
 
-    def fetch_all_journeys(self, from_place_id, destination_place_id, datetime):
-        journeys: list[Journey] = []
-        response = self.sncf_api_client.fetch_journeys(
-            from_place_id, destination_place_id, datetime, count=100
-        )
-        journeys = response.journeys
+    def fetch_cities_places(self, city_names: List[str]):
+        places: List[Place] = []
+        for city_name in city_names:
+            placesResponse = self.sncf_api_client.fetch_places(city_name)
+            for place in placesResponse.places:
+                places.append(place)
+        return places
 
-        return journeys
+    def fetch_all_daily_journeys(self, from_place_id, destination_place_id, day):
+        journeys: list[Journey] = []
+        last_journey_datetime = f"{day}T00:00:00"
+        has_tomorrow_journeys = False
+
+        while not has_tomorrow_journeys:
+            response = self.sncf_api_client.fetch_journeys(
+                from_place_id, destination_place_id, last_journey_datetime, count=10
+            )
+            for journey in response.journeys:
+                if day.replace("-", "") in journey.departure_date_time:
+                    journeys.append(journey)
+                else:
+                    return journeys
+            last_journey_datetime = journeys[-1].departure_date_time

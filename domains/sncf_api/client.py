@@ -1,6 +1,7 @@
 import os
 import requests
 
+from domains.sncf_api.models.ApiResponses.Common import ApiResponseError
 from domains.sncf_api.models.ApiResponses.JourneysApiResponse import JourneysApiResponse
 from domains.sncf_api.models.ApiResponses.PlacesApiResponse import PlacesApiResponse
 
@@ -19,6 +20,9 @@ class SNCF_API_Client:
             response = requests.get(url, headers=self.headers, params=params)
             response.raise_for_status()  # Raise an exception for HTTP errors
             data = response.json()
+            if "error" in data:
+                apiResponseError = ApiResponseError(**data["error"])
+                raise Exception(str(apiResponseError))
             return data
         except requests.exceptions.RequestException as e:
             print("Error fetching data:", e)
@@ -33,7 +37,7 @@ class SNCF_API_Client:
 
     def fetch_places(self, query):
         endpoint = "coverage/sncf/places"
-        params = {"q": query, "type": "administrative_region"}
+        params = {"q": query}
         data = self._fetch_data(endpoint, params)
 
         return PlacesApiResponse(**data)

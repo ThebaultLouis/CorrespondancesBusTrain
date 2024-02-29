@@ -1,8 +1,8 @@
 import json
 import os
 import shutil
+from build_python.sncf_api.sncf_api_place_ids import SNCF_API_PLACE_IDS
 
-from build_python.sncf_api.sncf_api_city_ids import SNCF_API_CITY_IDS
 from domains.helper.json_encoder import convert_python_object_to_dict
 from domains.sncf_api.client import SNCF_API_Client
 from domains.sncf_api.service import SNCF_API_SERVICE
@@ -45,21 +45,25 @@ class SNCF_API_FILES:
 
     def save_journeys_to_files(self):
         from_city_to_city_correspondances = [
-            # (SNCF_API_CITY_IDS.Grenoble, SNCF_API_CITY_IDS.Paris),
-            (SNCF_API_CITY_IDS.Grenoble, SNCF_API_CITY_IDS.Lyon),
-            # (SNCF_API_CITY_IDS.Lyon, SNCF_API_CITY_IDS.Paris),
+            # (SNCF_API_PLACE_IDS.Grenoble, SNCF_API_PLACE_IDS.Paris),
+            (
+                SNCF_API_PLACE_IDS.GRENOBLE__GRENOBLE,
+                SNCF_API_PLACE_IDS.LYON_PART_DIEU__LYON,
+            ),
+            # (SNCF_API_PLACE_IDS.Lyon, SNCF_API_PLACE_IDS.Paris),
         ]
 
-        datetime = "2024-02-27T06:00:00"
-        datetime_journeys_path = os.path.join(JOURNEYS_DIRECTORY, datetime)
+        day = "2024-03-09"
+        # datetime = "2024-03-09T00:00:00"
+        datetime_journeys_path = os.path.join(JOURNEYS_DIRECTORY, day)
         os.makedirs(datetime_journeys_path, exist_ok=True)
 
         for from_city_to_city_correspondance in from_city_to_city_correspondances:
             from_city, destination_city = from_city_to_city_correspondance
-            journeys = self.sncf_api_service.fetch_all_journeys(
+            journeys = self.sncf_api_service.fetch_all_daily_journeys(
                 from_place_id=from_city.value,
                 destination_place_id=destination_city.value,
-                datetime=datetime,
+                day=day,
             )
 
             journeys_save_path = os.path.join(

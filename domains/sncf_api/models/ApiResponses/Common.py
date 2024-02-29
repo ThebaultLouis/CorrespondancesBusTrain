@@ -12,3 +12,12 @@ class Link:
         self.templated = templated
         self.rel = rel
         self.type = type
+
+
+class ApiResponseError:
+    def __init__(self, id, message):
+        self.id = id
+        self.message = message
+
+    def __str__(self):
+        return f"{self.id} : {self.message}"

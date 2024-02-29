@@ -48,7 +48,7 @@ class Place:
         administrative_region=None,
     ):
         self.id = id
-        self.name = name
+        self.name: str = name
         self.quality = quality
         self.embedded_type = embedded_type
         if embedded_type == "stop_area":
